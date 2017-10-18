@@ -1,7 +1,6 @@
 # spring4_chapter02
 Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精通 PDF
 
-https://cn.bing.com/search?q=%E7%B2%BE%E9%80%9ASpring+4.x+%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98
 
 ---
 
@@ -191,7 +190,7 @@ https://cn.bing.com/search?q=%E7%B2%BE%E9%80%9ASpring+4.x+%E4%BC%81%E4%B8%9A%E5%
           p:driverClassName="com.mysql.jdbc.Driver"
           p:url="jdbc:mysql://localhost:3306/sampledb"
           p:username="root"
-          p:password="root!Zet007"
+          p:password="123456"
     />
 
     <!-- 3 定义JDBC模板Bean -->
