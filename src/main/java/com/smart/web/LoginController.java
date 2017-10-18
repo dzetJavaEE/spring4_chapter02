@@ -15,7 +15,7 @@ import java.util.Date;
  * 1 标注为一个Spring MVC的Controller
  */
 @Controller
-public class LoginController {
+public class LoginController implements ILoginController{
 
     private UserService userService;
 
