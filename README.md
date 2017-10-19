@@ -24,7 +24,7 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
     <groupId>test</groupId>
     <artifactId>spring4_chapter02</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging><!-- 当前为web项目，所以打包为war包 -->
+    <packaging>war</packaging>
 
     <dependencies>
         <!-- spring 依赖-->
@@ -53,7 +53,13 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
 
+        <!-- 数据库连接池 mysql驱动 依赖 -->
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -64,6 +70,8 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
+
+        <!--web依赖-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -71,12 +79,17 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-impl</artifactId>
+            <version>${taglibs-standard-impl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${javax.servlet.jstl.version}</version>
         </dependency>
 
-
+        <!--test依赖-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -89,21 +102,6 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
-        <dependency>
-            <groupId>org.apache.taglibs</groupId>
-            <artifactId>taglibs-standard-impl</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-
 
     </dependencies>
 
@@ -143,6 +141,8 @@ Spring4 入门登录Demo，来源：精通Spring 4.X:企业应用开发实战精
         <spring.version>4.2.2.RELEASE</spring.version>
         <mysql.version>5.1.29</mysql.version>
         <servlet.version>3.0-alpha-1</servlet.version>
+        <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
+        <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
         <aspectj.version>1.8.1</aspectj.version>
         <commons-codec.version>1.9</commons-codec.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
